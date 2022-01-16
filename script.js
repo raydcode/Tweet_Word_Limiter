@@ -19,3 +19,13 @@ const updateWordLimit = () => {
 };
 
 updateWordLimit();
+
+const tweet = () => {
+  const tweetInput = 'https://twitter.com/intent/tweet?text=';
+  window.open(`${tweetInput}${input.value}`);
+};
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  tweet();
+});
